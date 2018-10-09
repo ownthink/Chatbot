@@ -1,8 +1,8 @@
-from chat import client
+from chat import server
 
 if __name__=='__main__':
 	question = '你好'
 
-	answer = client.get_answer(question)
+	answer = server.get_answer(question)
 	
 	print(answer)
