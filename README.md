@@ -3,9 +3,9 @@
 
 
 ### 使用方式
-'''shell
+```shell
 python3 bot.py
-'''
+```
 
 
 
