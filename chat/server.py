@@ -1,12 +1,13 @@
+import json
 import requests
 
 def get_answer(text):
-	url = 'https://api.ownthink.com/bot?info=%s'%text
+	url = 'https://api.ownthink.com/bot?spoken=%s'%text
 	sess = requests.get(url)
 
 	text = sess.text
 	
-	text = eval(text)
-	
+	text = json.loads(text)
+
 	
 	return text
